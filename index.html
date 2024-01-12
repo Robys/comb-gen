@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Combinações</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <script type="text/javascript" src='index.js'></script>
+</head>
+<body>
+    <h2>Gerador de Combinações</h2>
+    <label>Seus Números</label>
+    <input type="text" id="num_input"/>
+
+    <label>Máximo de números por jogo</label>
+    <select id="lim_input">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+    </select>
+
+    <label>Máximo de jogos</label>
+    <input type="text" id="gam_input" style="width: 60px;"/>
+
+    <button id="send_btn" onclick="Main()">GERAR</button>
+
+    <hr/>
+
+    <h3>Jogo Automático</h3>
+
+    <label>Máximo de jogos</label>
+    <input type="text" id="gam_input_2" style="width: 60px;"/>
+
+    <label>jogo automático</label>
+    <select id="auto-game">
+        <option> - </option>
+        <option value="facil">lotofácil</option>
+        <option value="mega">mega sena</option>
+        <option value="quina">quina</option>
+        <option value="time">timemania</option>
+        <option value="sorte">dia de sorte</option>
+    </select>
+
+    <button id="send_btn_2" onclick="AutoGame()">GERAR</button>
+    
+
+    <hr/>
+
+    <div id="result_box">
+        <table>
+            <thead>
+                <tr>
+                  <th>jogo</th>
+                  <th>números</th>
+                </tr>
+              </thead>
+  
+              <tbody id="comb_table_body">
+                
+              </tbody>
+        </table>
+    </div>
+</body>
+</html>
